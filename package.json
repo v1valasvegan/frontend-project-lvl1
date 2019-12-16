@@ -1,0 +1,30 @@
+{
+  "name": "brain-games",
+  "version": "1.0.0",
+  "description": "games for your brains",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/v1valasvegan/frontend-project-lvl1.git"
+  },
+  "keywords": [
+    "brain",
+    "games",
+    "hexlet",
+    "project",
+    "js",
+    "git"
+  ],
+  "author": "v1valasvegan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/v1valasvegan/frontend-project-lvl1/issues"
+  },
+  "homepage": "https://github.com/v1valasvegan/frontend-project-lvl1#readme",
+  "bin": {
+    "brain-games": "src/bin/brain-games.js"
+  }
+}
