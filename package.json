@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "games for your brains",
   "main": "index.js",
+  "type": "module",
   "bin": {
     "brain-games": "src/bin/brain-games.js"
   },
@@ -37,5 +38,8 @@
     "@babel/core": "^7.7.5",
     "@babel/node": "^7.7.4",
     "@babel/preset-env": "^7.7.6"
+  },
+  "dependencies": {
+    "readline-sync": "^1.4.10"
   }
 }
