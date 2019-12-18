@@ -4,6 +4,15 @@
 [![Build Status](https://travis-ci.com/v1valasvegan/frontend-project-lvl1.svg?branch=master)](https://travis-ci.com/v1valasvegan/frontend-project-lvl1)
 
 
+## Setup:
+`make install`
+
+## Run brain-even game
+`brain-even`
+
+### Short demo
+[![asciicast](https://asciinema.org/a/289046.svg)](https://asciinema.org/a/289046)
+
 
 
 
