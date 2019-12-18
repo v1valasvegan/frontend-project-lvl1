@@ -1,5 +1,5 @@
-#! /usr/local/bin/node
-import getName from '../index.mjs';
+#!/usr/bin/env node
+import getName from '..';
 
 console.log('Welcome to The Brain Games!');
 const userName = getName();

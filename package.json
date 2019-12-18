@@ -3,9 +3,8 @@
   "version": "1.0.0",
   "description": "games for your brains",
   "main": "index.js",
-  "type": "module",
   "bin": {
-    "brain-games": "src/bin/brain-games.js"
+    "brain-games": "dist/bin/brain-games.js"
   },
   "files": [
     "dist"
