@@ -1,4 +1,4 @@
-#! /usr/local/bin/node
+#!/usr/bin/env node
 import { getName } from '../index';
 
 console.log('Welcome to The Brain Games!');
