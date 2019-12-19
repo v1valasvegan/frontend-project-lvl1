@@ -2,7 +2,7 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/codeclimate/codeclimate/maintainability)
 [![Build Status](https://travis-ci.com/v1valasvegan/frontend-project-lvl1.svg?branch=master)](https://travis-ci.com/v1valasvegan/frontend-project-lvl1)
 
-  Only the best games for your beloved brains!
+  Here you can find a small set of console games for your beloved brains.
 
 
 ## Setup:
