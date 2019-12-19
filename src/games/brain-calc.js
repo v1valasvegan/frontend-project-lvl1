@@ -6,7 +6,7 @@ const greeting = 'What is the result of the expression?';
 const makeQuestionPair = () => {
   const x = Math.floor(Math.random() * 100);
   const y = Math.floor(Math.random() * 100);
-  const operationCode = Math.floor(Math.random() * 2);
+  const operationCode = Math.floor(Math.random() * 3);
 
   const makeOperationPair = (opCode) => {
     switch (opCode) {
