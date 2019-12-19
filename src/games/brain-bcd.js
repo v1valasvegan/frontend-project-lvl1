@@ -13,6 +13,9 @@ const makeQuestionPair = () => {
     if (max % min === 0) {
       return min;
     }
+    if (min === 0) {
+      return 1;
+    }
     const iter = (divisor) => {
       if (max % divisor === 0 && min % divisor === 0) {
         return divisor;
