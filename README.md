@@ -10,6 +10,9 @@
 ## Run brain-even game
 `brain-even`
 
+## Run brain-calc game
+`brain-calc`
+
 ### Short demo
 [![asciicast](https://asciinema.org/a/289046.svg)](https://asciinema.org/a/289046)
 
