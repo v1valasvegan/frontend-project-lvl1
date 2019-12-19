@@ -32,6 +32,9 @@
   "bugs": {
     "url": "https://github.com/v1valasvegan/frontend-project-lvl1/issues"
   },
+  "compilerOptions": {
+    "module": "es2015"
+  },
   "homepage": "https://github.com/v1valasvegan/frontend-project-lvl1#readme",
   "devDependencies": {
     "@babel/cli": "^7.7.5",
@@ -46,6 +49,7 @@
     "plugin-import": "^1.0.52"
   },
   "dependencies": {
+    "@hexlet/pairs": "^1.0.10",
     "readline-sync": "^1.4.10"
   }
 }

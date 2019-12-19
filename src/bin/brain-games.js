@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import { ask } from '../index';
+import ask from '../index';
 
 const greeting = 'Welcome to The Brain Games!';
 console.log(greeting);
