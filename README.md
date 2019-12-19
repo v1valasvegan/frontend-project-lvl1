@@ -17,8 +17,7 @@
 `brain-bcd`
 
 ### Short demo
-https://asciinema.org/a/OQXIRKf6rYJbM5uaFXMPA9Gg7
-
+[![asciicast](https://asciinema.org/a/OQXIRKf6rYJbM5uaFXMPA9Gg7.svg)](https://asciinema.org/a/OQXIRKf6rYJbM5uaFXMPA9Gg7)
 
 
 
