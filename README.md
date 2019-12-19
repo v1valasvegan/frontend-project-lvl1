@@ -13,9 +13,11 @@
 ## Run brain-calc game
 `brain-calc`
 
-### Short demo
-[![asciicast](https://asciinema.org/a/289046.svg)](https://asciinema.org/a/289046)
+## Run brain-bcd game
+`brain-bcd`
 
+### Short demo
+https://asciinema.org/a/OQXIRKf6rYJbM5uaFXMPA9Gg7
 
 
 
