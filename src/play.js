@@ -1,7 +1,5 @@
-import readlineSync from 'readline-sync';
 import { car, cdr } from '@hexlet/pairs';
-
-export const ask = (text) => (param = '') => readlineSync.question(`${text}${param}`);
+import ask from './index';
 
 export default (greeting, makeQuestionPair) => () => {
   console.log('Welcome to the Brain Games!');
