@@ -1,11 +1,12 @@
 import { cons } from '@hexlet/pairs';
 import play from '../play';
+import randomInt from '../randomint';
 
 const greeting = 'Find the greatest common divisor of given numbers';
 
 const makeQuestionPair = () => {
-  const x = Math.floor(Math.random() * 100);
-  const y = Math.floor(Math.random() * 100);
+  const x = randomInt(100);
+  const y = randomInt(100);
 
   const findBcd = (a, b) => {
     const min = a < b ? a : b;

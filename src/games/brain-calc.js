@@ -1,12 +1,13 @@
 import { cons, car, cdr } from '@hexlet/pairs';
 import play from '../play';
+import randomInt from '../randomint';
 
 const greeting = 'What is the result of the expression?';
 
 const makeQuestionPair = () => {
-  const x = Math.floor(Math.random() * 100);
-  const y = Math.floor(Math.random() * 100);
-  const operationCode = Math.floor(Math.random() * 3);
+  const x = randomInt(100);
+  const y = randomInt(100);
+  const operationCode = randomInt(3);
 
   const makeOperationPair = (opCode) => {
     switch (opCode) {
