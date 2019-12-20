@@ -17,8 +17,10 @@
 ## Run brain-bcd game
 `brain-bcd`
 
-### Short demo
-[![asciicast](https://asciinema.org/a/Zk8mXXhhoVrzcXk8WcmZxFyaR.svg)](https://asciinema.org/a/Zk8mXXhhoVrzcXk8WcmZxFyaR)
+## Run brain-progression game
+`brain-progression`
 
+### Short demo
+[![asciicast](https://asciinema.org/a/wmxAQ1nEsxtaM4XfCxQAi2gLE.svg)](https://asciinema.org/a/wmxAQ1nEsxtaM4XfCxQAi2gLE)
 
 
