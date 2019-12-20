@@ -20,7 +20,10 @@
 ## Run brain-progression game
 `brain-progression`
 
+## Run brain-prime game
+`brain-prime`
+
 ### Short demo
-[![asciicast](https://asciinema.org/a/wmxAQ1nEsxtaM4XfCxQAi2gLE.svg)](https://asciinema.org/a/wmxAQ1nEsxtaM4XfCxQAi2gLE)
+[![asciicast](https://asciinema.org/a/DMYWrs5Q3bP0O9MmZMPK0uI66.svg)](https://asciinema.org/a/DMYWrs5Q3bP0O9MmZMPK0uI66)
 
 
