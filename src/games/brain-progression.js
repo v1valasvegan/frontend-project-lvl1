@@ -6,9 +6,9 @@ const description = 'What number is missing in the progression?';
 const sequenceLength = 9;
 
 const makeQuestionPair = () => {
-  const start = randomInt(20);
-  const increment = randomInt(10) + 1;
-  const missedNumberIndex = randomInt(10);
+  const start = randomInt(0, 20);
+  const increment = randomInt(1, 11);
+  const missedNumberIndex = randomInt(0, 10);
   const answer = start + missedNumberIndex * increment;
 
   const makeQuestion = () => {

@@ -13,9 +13,9 @@ const { length } = operations;
 const getOperationPair = (opCode) => operations[opCode];
 
 const makeQuestionPair = () => {
-  const x = randomInt(100);
-  const y = randomInt(100);
-  const operationCode = randomInt(length);
+  const x = randomInt(0, 100);
+  const y = randomInt(0, 100);
+  const operationCode = randomInt(0, length);
   const operationPair = getOperationPair(operationCode);
   const operation = car(operationPair);
   const operationSymbol = cdr(operationPair);

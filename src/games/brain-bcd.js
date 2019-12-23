@@ -24,8 +24,8 @@ const findBcd = (a, b) => {
 };
 
 const makeQuestionPair = () => {
-  const x = randomInt(100);
-  const y = randomInt(100);
+  const x = randomInt(0, 100);
+  const y = randomInt(0, 100);
   const question = `${x} ${y}`;
   const answer = findBcd(x, y);
   return cons(question, answer.toString());

@@ -26,7 +26,7 @@ const isPrime = (number) => {
 };
 
 const makeQuestionPair = () => {
-  const question = randomInt(1000) + 1;
+  const question = randomInt(1, 1001);
   const answer = isPrime(question) ? 'yes' : 'no';
   return cons(question, answer);
 };
