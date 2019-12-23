@@ -28,7 +28,7 @@ const makeQuestionPair = () => {
   const y = randomInt(100);
   const question = `${x} ${y}`;
   const answer = findBcd(x, y);
-  return cons(question, answer);
+  return cons(question, answer.toString());
 };
 
 export default play(desctiption, makeQuestionPair);

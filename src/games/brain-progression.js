@@ -23,7 +23,7 @@ const makeQuestionPair = () => {
     return iter(start, '');
   };
 
-  return cons(makeQuestion(), answer);
+  return cons(makeQuestion(), answer.toString());
 };
 
 export default play(description, makeQuestionPair);

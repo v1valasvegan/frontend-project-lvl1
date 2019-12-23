@@ -16,7 +16,8 @@ export default (desctiption, makeQuestionPair) => () => {
     const question = car(questionPair);
     const correctAnswer = cdr(questionPair);
     const answer = ask('Question: ')(`${question} `);
-    if (answer.toString() !== correctAnswer.toString()) {
+    console.log(typeof answer, typeof correctAnswer);
+    if (answer !== correctAnswer) {
       console.log(`${answer} is wrong answer ;(. Correct answer was ${correctAnswer}`);
       return;
     }

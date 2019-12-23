@@ -21,7 +21,7 @@ const makeQuestionPair = () => {
   const operationSymbol = cdr(operationPair);
   const question = `${x} ${operationSymbol} ${y}`;
   const answer = operation(x, y);
-  return cons(question, answer);
+  return cons(question, answer.toString());
 };
 
 export default play(description, makeQuestionPair);
