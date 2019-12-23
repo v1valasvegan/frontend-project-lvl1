@@ -1,10 +1,10 @@
 import { car, cdr } from '@hexlet/pairs';
-import ask from './index';
+import readlineSync from 'readline-sync';
 
 export default (desctiption, makeQuestionPair) => () => {
   console.log('Welcome to the Brain Games!');
   console.log(`${desctiption}\n`);
-  const userName = ask('May I have your name? ')();
+  const userName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${userName}!\n`);
 
   const iter = (counter) => {
@@ -15,7 +15,7 @@ export default (desctiption, makeQuestionPair) => () => {
     const questionPair = makeQuestionPair();
     const question = car(questionPair);
     const correctAnswer = cdr(questionPair);
-    const answer = ask('Question: ')(`${question} `);
+    const answer = readlineSync.question(`Question: ${question} `);
     console.log(typeof answer, typeof correctAnswer);
     if (answer !== correctAnswer) {
       console.log(`${answer} is wrong answer ;(. Correct answer was ${correctAnswer}`);
