@@ -3,6 +3,7 @@ import play from '../play';
 import randomInt from '../randomint';
 
 const description = 'What number is missing in the progression?';
+const sequenceLength = 9;
 
 const makeQuestionPair = () => {
   const start = randomInt(20);
@@ -13,7 +14,7 @@ const makeQuestionPair = () => {
   const makeQuestion = () => {
     const iter = (i, result) => {
       const newResult = i === answer ? `${result}.. ` : `${result}${i} `;
-      if (i === start + 9 * increment) {
+      if (i === start + sequenceLength * increment) {
         return newResult;
       }
       return iter(i + increment, newResult);
