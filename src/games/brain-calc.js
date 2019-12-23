@@ -10,13 +10,12 @@ const operations = [
 ];
 const { length } = operations;
 
+const getOperationPair = (opCode) => operations[opCode];
+
 const makeQuestionPair = () => {
   const x = randomInt(100);
   const y = randomInt(100);
   const operationCode = randomInt(length);
-
-  const getOperationPair = (opCode) => operations[opCode];
-
   const operationPair = getOperationPair(operationCode);
   const operation = car(operationPair);
   const operationSymbol = cdr(operationPair);

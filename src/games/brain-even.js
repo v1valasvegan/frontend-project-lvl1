@@ -4,8 +4,9 @@ import randomInt from '../randomint';
 
 const description = 'Answer "yes" if the number is even, otherwise answer "no".';
 
+const isEven = (num) => num % 2 === 0;
+
 const makeQuestionPair = () => {
-  const isEven = (num) => num % 2 === 0;
 
   const question = randomInt(100);
   const answer = isEven(question) ? 'yes' : 'no';
