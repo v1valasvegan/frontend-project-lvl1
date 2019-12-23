@@ -2,7 +2,7 @@ import { cons } from '@hexlet/pairs';
 import play from '../play';
 import randomInt from '../randomint';
 
-const greeting = 'Find the greatest common divisor of given numbers';
+const desctiption = 'Find the greatest common divisor of given numbers';
 
 const makeQuestionPair = () => {
   const x = randomInt(100);
@@ -32,4 +32,4 @@ const makeQuestionPair = () => {
   return cons(question, answer);
 };
 
-export default play(greeting, makeQuestionPair);
+export default play(desctiption, makeQuestionPair);

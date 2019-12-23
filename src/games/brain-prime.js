@@ -2,7 +2,7 @@ import { cons } from '@hexlet/pairs';
 import play from '../play';
 import randomInt from '../randomint';
 
-const greeting = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 const makeQuestionPair = () => {
   const question = randomInt(1000) + 1;
@@ -32,4 +32,4 @@ const makeQuestionPair = () => {
   return cons(question, answer);
 };
 
-export default play(greeting, makeQuestionPair);
+export default play(description, makeQuestionPair);

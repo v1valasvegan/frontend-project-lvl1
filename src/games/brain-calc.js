@@ -2,7 +2,7 @@ import { cons, car, cdr } from '@hexlet/pairs';
 import play from '../play';
 import randomInt from '../randomint';
 
-const greeting = 'What is the result of the expression?';
+const description = 'What is the result of the expression?';
 
 const makeQuestionPair = () => {
   const x = randomInt(100);
@@ -26,4 +26,4 @@ const makeQuestionPair = () => {
   return cons(question, answer);
 };
 
-export default play(greeting, makeQuestionPair);
+export default play(description, makeQuestionPair);

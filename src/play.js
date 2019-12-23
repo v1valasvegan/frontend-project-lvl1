@@ -1,9 +1,9 @@
 import { car, cdr } from '@hexlet/pairs';
 import ask from './index';
 
-export default (greeting, makeQuestionPair) => () => {
+export default (desctiption, makeQuestionPair) => () => {
   console.log('Welcome to the Brain Games!');
-  console.log(`${greeting}\n`);
+  console.log(`${desctiption}\n`);
   const userName = ask('May I have your name? ')();
   console.log(`Hello, ${userName}!\n`);
 

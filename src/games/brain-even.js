@@ -2,7 +2,7 @@ import { cons } from '@hexlet/pairs';
 import play from '../play';
 import randomInt from '../randomint';
 
-const greeting = 'Answer "yes" if the number is even, otherwise answer "no".';
+const description = 'Answer "yes" if the number is even, otherwise answer "no".';
 
 const makeQuestionPair = () => {
   const question = randomInt(100);
@@ -10,4 +10,4 @@ const makeQuestionPair = () => {
   return cons(question, answer);
 };
 
-export default play(greeting, makeQuestionPair);
+export default play(description, makeQuestionPair);

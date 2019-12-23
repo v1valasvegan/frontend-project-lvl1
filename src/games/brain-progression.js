@@ -2,7 +2,7 @@ import { cons } from '@hexlet/pairs';
 import play from '../play';
 import randomInt from '../randomint';
 
-const greeting = 'What number is missing in the progression?';
+const description = 'What number is missing in the progression?';
 
 const makeQuestionPair = () => {
   const start = randomInt(20);
@@ -25,4 +25,4 @@ const makeQuestionPair = () => {
   return cons(makeQuestion(), answer);
 };
 
-export default play(greeting, makeQuestionPair);
+export default play(description, makeQuestionPair);
