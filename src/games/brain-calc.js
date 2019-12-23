@@ -3,22 +3,21 @@ import play from '../play';
 import randomInt from '../randomint';
 
 const description = 'What is the result of the expression?';
+const operations = [
+  cons((a, b) => a + b, '+'),
+  cons((a, b) => a - b, '-'),
+  cons((a, b) => a * b, '*'),
+];
+const { length } = operations;
 
 const makeQuestionPair = () => {
   const x = randomInt(100);
   const y = randomInt(100);
-  const operationCode = randomInt(3);
+  const operationCode = randomInt(length);
 
-  const makeOperationPair = (opCode) => {
-    switch (opCode) {
-      case 0: return cons((a, b) => a + b, '+');
-      case 1: return cons((a, b) => a - b, '-');
-      case 2: return cons((a, b) => a * b, '*');
-      default: return () => `Error: no operation with code ${opCode}`;
-    }
-  };
+  const getOperationPair = (opCode) => operations[opCode];
 
-  const operationPair = makeOperationPair(operationCode);
+  const operationPair = getOperationPair(operationCode);
   const operation = car(operationPair);
   const operationSymbol = cdr(operationPair);
   const question = `${x} ${operationSymbol} ${y}`;
