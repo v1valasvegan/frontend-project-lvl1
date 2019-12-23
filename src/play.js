@@ -22,8 +22,7 @@ export default (desctiption, makeQuestionPair) => () => {
     }
     console.log(`Your answer: ${answer}`);
     console.log('Correct!');
-    // eslint-disable-next-line consistent-return
-    return iter(counter - 1);
+    iter(counter - 1);
   };
 
   return iter(3);
