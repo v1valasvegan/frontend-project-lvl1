@@ -13,8 +13,7 @@ const { length } = operations;
 const makeQuestionPair = () => {
   const x = randomInt(0, 100);
   const y = randomInt(0, 100);
-  const operationCode = randomInt(0, length);
-  const operationPair = operations[operationCode];
+  const operationPair = operations[randomInt(0, length)];
   const operation = car(operationPair);
   const operator = cdr(operationPair);
   const question = `${x} ${operator} ${y}`;
