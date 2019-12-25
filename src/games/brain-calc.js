@@ -16,8 +16,8 @@ const makeQuestionPair = () => {
   const operationCode = randomInt(0, length);
   const operationPair = operations[operationCode];
   const operation = car(operationPair);
-  const operationSymbol = cdr(operationPair);
-  const question = `${x} ${operationSymbol} ${y}`;
+  const operator = cdr(operationPair);
+  const question = `${x} ${operator} ${y}`;
   const answer = operation(x, y);
   return cons(question, answer.toString());
 };
