@@ -1,22 +1,24 @@
-import { cons } from '@hexlet/pairs';
+import { cons, cdr, car } from '@hexlet/pairs';
 import play from '../play';
 import randomInt from '../randomint';
 
 const description = 'What number is missing in the progression?';
-const sequenceLength = 9;
+const sequenceLength = 10;
+const startRange = cons(0, 20);
+const incrementRange = cons(1, 15);
 
 const makeQuestionPair = () => {
-  const start = randomInt(0, 20);
-  const increment = randomInt(1, 11);
-  const missedNumberIndex = randomInt(0, 10);
+  const start = randomInt(car(startRange), cdr(startRange));
+  const increment = randomInt(car(incrementRange), cdr(incrementRange));
+  const missedNumberIndex = randomInt(0, sequenceLength - 1);
   const answer = start + missedNumberIndex * increment;
 
   const makeQuestion = () => {
     const iter = (i, result) => {
-      const newResult = i === answer ? `${result}.. ` : `${result}${i} `;
       if (i === start + sequenceLength * increment) {
-        return newResult;
+        return result;
       }
+      const newResult = i === answer ? `${result}.. ` : `${result}${i} `;
       return iter(i + increment, newResult);
     };
 
