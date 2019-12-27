@@ -25,10 +25,10 @@ const isPrime = (number) => {
   return iter(Math.floor(number / 3));
 };
 
-const makeQuestionPair = () => {
+const makeGameData = () => {
   const question = randomInt(1, 1001);
   const answer = isPrime(question) ? 'yes' : 'no';
   return cons(question, answer);
 };
 
-export default play(description, makeQuestionPair);
+export default play(description, makeGameData);

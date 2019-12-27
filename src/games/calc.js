@@ -10,7 +10,7 @@ const operations = [
 ];
 const { length } = operations;
 
-const makeQuestionPair = () => {
+const makeGameData = () => {
   const x = randomInt(0, 100);
   const y = randomInt(0, 100);
   const operationPair = operations[randomInt(0, length)];
@@ -21,4 +21,4 @@ const makeQuestionPair = () => {
   return cons(question, answer.toString());
 };
 
-export default play(description, makeQuestionPair);
+export default play(description, makeGameData);

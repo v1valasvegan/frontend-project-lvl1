@@ -23,7 +23,7 @@ const findBcd = (a, b) => {
   return iter(Math.floor(min / 2));
 };
 
-const makeQuestionPair = () => {
+const makeGameData = () => {
   const x = randomInt(0, 100);
   const y = randomInt(0, 100);
   const question = `${x} ${y}`;
@@ -31,4 +31,4 @@ const makeQuestionPair = () => {
   return cons(question, answer.toString());
 };
 
-export default play(desctiption, makeQuestionPair);
+export default play(desctiption, makeGameData);

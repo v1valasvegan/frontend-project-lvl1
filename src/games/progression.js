@@ -7,7 +7,7 @@ const sequenceLength = 10;
 const startRange = cons(0, 20);
 const incrementRange = cons(1, 15);
 
-const makeQuestionPair = () => {
+const makeGameData = () => {
   const start = randomInt(car(startRange), cdr(startRange));
   const increment = randomInt(car(incrementRange), cdr(incrementRange));
   const missedNumberIndex = randomInt(0, sequenceLength - 1);
@@ -28,4 +28,4 @@ const makeQuestionPair = () => {
   return cons(makeQuestion(), answer.toString());
 };
 
-export default play(description, makeQuestionPair);
+export default play(description, makeGameData);
