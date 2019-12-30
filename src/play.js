@@ -1,7 +1,7 @@
 import { car, cdr } from '@hexlet/pairs';
 import readlineSync from 'readline-sync';
 
-const numberOfRounds = 3;
+const roundsCount = 3;
 
 export default (desctiption, makeGameData) => () => {
   console.log('Welcome to the Brain Games!');
@@ -27,5 +27,5 @@ export default (desctiption, makeGameData) => () => {
     iter(counter - 1);
   };
 
-  return iter(numberOfRounds);
+  return iter(roundsCount);
 };
