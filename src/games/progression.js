@@ -9,11 +9,11 @@ const incrementRange = cons(1, 15);
 
 const makeQuestion = (start, increment, answer) => {
   const iter = (i, result) => {
-    if (i === start + sequenceLength * increment) {
-      return result;
+    const current = i === answer ? '..' : `${i}`;
+    if (i === start + (sequenceLength - 1) * increment) {
+      return `${result}${current}`;
     }
-    const newResult = i === answer ? `${result}.. ` : `${result}${i} `;
-    return iter(i + increment, newResult);
+    return iter(i + increment, `${result}${current} `);
   };
 
   return iter(start, '');
