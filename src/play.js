@@ -24,7 +24,6 @@ export default (desctiption, makeGameData) => {
       console.log(`Let's try again, ${userName}!`);
       return;
     }
-    console.log(`Your answer: ${answer}`);
     console.log('Correct!');
     iter(counter - 1);
   };
