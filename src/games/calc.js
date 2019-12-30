@@ -13,7 +13,7 @@ const { length } = operations;
 const makeGameData = () => {
   const x = randomInt(0, 100);
   const y = randomInt(0, 100);
-  const operationPair = operations[randomInt(0, length)];
+  const operationPair = operations[randomInt(0, length - 1)];
   const operation = car(operationPair);
   const operator = cdr(operationPair);
   const question = `${x} ${operator} ${y}`;
