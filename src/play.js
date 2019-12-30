@@ -28,5 +28,5 @@ export default (desctiption, makeGameData) => () => {
     iter(counter - 1);
   };
 
-  return iter(roundsCount);
+  iter(roundsCount);
 };
