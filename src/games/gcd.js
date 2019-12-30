@@ -4,7 +4,7 @@ import randomInt from '../randomint';
 
 const desctiption = 'Find the greatest common divisor of given numbers';
 
-const findBcd = (a, b) => {
+const findGcd = (a, b) => {
   const min = a < b ? a : b;
   const max = a < b ? b : a;
   if (max % min === 0) {
@@ -27,7 +27,7 @@ const makeGameData = () => {
   const x = randomInt(0, 100);
   const y = randomInt(0, 100);
   const question = `${x} ${y}`;
-  const answer = findBcd(x, y);
+  const answer = findGcd(x, y);
   return cons(question, answer.toString());
 };
 
