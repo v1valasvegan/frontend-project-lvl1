@@ -11,4 +11,4 @@ const makeGameData = () => {
   return cons(question, answer);
 };
 
-export default play(description, makeGameData);
+export default () => play(description, makeGameData);

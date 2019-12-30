@@ -27,4 +27,4 @@ const makeGameData = () => {
   return cons(makeQuestion(start, increment, answer), answer.toString());
 };
 
-export default play(description, makeGameData);
+export default () => play(description, makeGameData);
