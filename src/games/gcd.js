@@ -1,8 +1,10 @@
-import { cons } from '@hexlet/pairs';
+import { cons, car, cdr } from '@hexlet/pairs';
 import play from '../play';
 import randomInt from '../randomint';
 
-const desctiption = 'Find the greatest common divisor of given numbers';
+const description = 'Find the greatest common divisor of given numbers';
+const rangeX = cons(0, 100);
+const rangeY = cons(0, 100);
 
 const findGcd = (a, b) => {
   const min = a < b ? a : b;
@@ -24,11 +26,11 @@ const findGcd = (a, b) => {
 };
 
 const makeGameData = () => {
-  const x = randomInt(0, 100);
-  const y = randomInt(0, 100);
+  const x = randomInt(car(rangeX), cdr(rangeX));
+  const y = randomInt(car(rangeY), cdr(rangeY));
   const question = `${x} ${y}`;
   const answer = findGcd(x, y);
   return cons(question, answer.toString());
 };
 
-export default () => play(desctiption, makeGameData);
+export default () => play(description, makeGameData);

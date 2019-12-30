@@ -1,8 +1,9 @@
-import { cons } from '@hexlet/pairs';
+import { cons, car, cdr } from '@hexlet/pairs';
 import play from '../play';
 import randomInt from '../randomint';
 
 const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+const questionRange = cons(1, 1000);
 
 const isPrime = (number) => {
   if (number <= 2) {
@@ -28,7 +29,7 @@ const isPrime = (number) => {
 };
 
 const makeGameData = () => {
-  const question = randomInt(1, 1001);
+  const question = randomInt(car(questionRange), cdr(questionRange));
   const answer = isPrime(question) ? 'yes' : 'no';
   return cons(question, answer);
 };
