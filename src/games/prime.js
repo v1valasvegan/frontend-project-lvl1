@@ -12,17 +12,19 @@ const isPrime = (number) => {
     return false;
   }
 
+  const maxPossibleDivisor = Math.floor(Math.sqrt(number));
+
   const iter = (divisor) => {
-    if (divisor === 1) {
+    if (divisor > maxPossibleDivisor) {
       return true;
     }
     if (number % divisor === 0) {
       return false;
     }
-    return iter(divisor - 1);
+    return iter(divisor + 2);
   };
 
-  return iter(Math.floor(number / 3));
+  return iter(3);
 };
 
 const makeGameData = () => {
