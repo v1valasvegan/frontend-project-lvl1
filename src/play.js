@@ -17,7 +17,8 @@ export default (desctiption, makeGameData) => () => {
     const questionPair = makeGameData();
     const question = car(questionPair);
     const correctAnswer = cdr(questionPair);
-    const answer = readlineSync.question(`Question: ${question} `);
+    console.log(`Question: ${question}`);
+    const answer = readlineSync.question('Your answer: ');
     if (answer !== correctAnswer) {
       console.log(`${answer} is wrong answer ;(. Correct answer was ${correctAnswer}`);
       console.log(`Let's try again, ${userName}!`);
