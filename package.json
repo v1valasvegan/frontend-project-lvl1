@@ -2,7 +2,6 @@
   "name": "brain-games",
   "version": "1.0.0",
   "description": "games for your brains",
-  "main": "index.js",
   "bin": {
     "brain-games": "dist/bin/brain-games.js",
     "brain-even": "dist/bin/even.js",
