@@ -14,9 +14,9 @@ export default (desctiption, makeGameData) => {
       console.log(`Congratulations, ${userName}!`);
       return;
     }
-    const questionPair = makeGameData();
-    const question = car(questionPair);
-    const correctAnswer = cdr(questionPair);
+    const gameData = makeGameData();
+    const question = car(gameData);
+    const correctAnswer = cdr(gameData);
     console.log(`Question: ${question}`);
     const answer = readlineSync.question('Your answer: ');
     if (answer !== correctAnswer) {
