@@ -13,10 +13,10 @@ const makeQuestion = (start, increment, answerIndex) => {
     if (index === 0) {
       return current;
     }
-    return `${iter(index - 1)} ${current}`.trim();
+    return `${iter(index - 1)} ${current}`;
   };
 
-  return iter(sequenceLength - 1);
+  return iter(sequenceLength - 1).trim();
 };
 
 const makeGameData = () => {
