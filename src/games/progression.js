@@ -8,15 +8,15 @@ const startRange = cons(0, 20);
 const incrementRange = cons(1, 15);
 
 const makeQuestion = (start, increment, answerIndex) => {
-  const iter = (index, result) => {
+  const iter = (index) => {
     const current = index === answerIndex ? '..' : `${start + increment * index}`;
-    if (index === sequenceLength - 1) {
-      return `${result}${current}`;
+    if (index === 0) {
+      return current;
     }
-    return iter(index + 1, `${result}${current} `);
+    return `${iter(index - 1)} ${current}`.trim();
   };
 
-  return iter(0, '');
+  return iter(sequenceLength - 1);
 };
 
 const makeGameData = () => {
